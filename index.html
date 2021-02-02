@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body style="background-color:#101820FF;">
+    <div class="container-fluid">
+        <header class="header">
+            <img src="naveen-logo.png" class="header-logo">
+            <h1 class="header-text"><u>ANGULAR INTERVIEW QUESTIONS FOR BEGINNER</u></h1>
+        </header>
+        
+        <h2>1.Angular Framework</h2>
+        <p><B>Angular</B> is a TypeScript-based open-source front-end platform that makes it easy to build applications with in web/mobile/desktop. The major features of this framework such as declarative templates, dependency injection, end to end tooling, and many more other features are used to ease the development.</p>
+        <h2>2.Difference between Angular and AngularJS</h2>
+               <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <p><b><u>Angular</u>:</b></p>
+                  <p><ul><li>Introduced the typescript to write the application.</li>
+                    <li>Command line interface(CLI) tool is used.</li>
+                    <li>It is a mobile friendly framework.</li>
+                    <li>It is based on service/controller.</li>
+                    <li>Ease to create SEO friendly applications.</li>
+                </ul></p>
+                      </div>
+                      <div class="col-sm">
+                        <p><b><u>AngularJS</u>:</b></p>
+                  <p><ul><li>This uses use JavaScript to build the application.</li>
+                    <li>Command line interface(CLI) tool is not used.</li>
+                    <li>It is not a mobile friendly framework.</li>
+                    <li>It is based on MVC architecture.</li>
+                    <li>Difficult to create SEO friendly applications.</li>
+                </ul></p>
+                      </div>
+                      </div>
+                    </div>
+        <h2>3.Angular CLI </h2>
+        <p><b>Angular CLI</b> is a command line interface tool which is used to initialize, develop, scaffold, and maintain Angular applications. You can use these command directly on command prompt or indirectly through an interactive UI i.e. Angular Console.
+        <br>
+        <ul>
+            <li>1.Creating New Project: <b>ng new</b></li>
+            <li>2.Generating Components, Directives & Services: <b>ng generate/g</b></li>
+            <li>3.Running the Project: <B>ng serve</B></li>
+        </ul></p>
+        <h2>4. TypeScript</h2>
+        <p><b>TypeScript</b> is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, and compiles to plain JavaScript. Angular built entirely in TypeScript and used as a primary language.<br> <B>Syntax:</B> npm install -g typescript</p>
+        <h2>5.Key Components of Angular</h2>
+        <P>1.<b>Component:</b> These are the basic building blocks of angular application to control HTML views.<br>
+           2.<b>Modules:</b> An angular module is set of angular basic building blocks like component, directives, services etc. An application is divided into logical pieces and each piece of code is called as "module" which perform a single task.<br>
+           3.<b>Templates:</b> This represent the views of an Angular application.<br>
+           4.<b>Services:</b> It is used to create components which can be shared across the entire application.<br>
+           5.<b>Metadata:</b> This can be used to add more data to an Angular class.</P>
+        <h2>6.Directives</h2>
+        <p><b>Directives</b> are use to binding the data from component to view component.</p>
+        <h2>7.Components</h2>
+        <p><b>Components</b> are the most basic UI building block of an Angular app which formed a tree of Angular components. These components are subset of directives. </p>
+        <h2>8.Differences between Component and Directive</h2>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <p><b><u>Component</u>:</b></p>
+          <p><ul><li>To register a component we use @Component meta-data annotation.</li>
+            <li>Components are typically used to create UI blocks.</li>
+            <li>Component is used to break up the application into smaller components.</li>
+            <li>Only one component can be present per DOM element.</li>
+            <li>@View decorator or templateurl/template are mandatory.</li>
+        </ul></p>
+              </div>
+              <div class="col-sm">
+                <p><b><u>Directive</u>:</b></p>
+          <p><ul><li>To register directives we use @Directive meta-data annotation.</li>
+            <li>Directive is used to add behavior to an existing DOM element.</li>
+            <li>Directive is use to design re-usable components.</li>
+            <li>Many directives can be used per DOM element.</li>
+            <li>Directive doesn't use View.</li>
+        </ul></p>
+              </div>
+              </div>
+            </div>
+        <h2>9.Template</h2>
+        <p><b>Template</b> is a HTML view.that tells Angular how to render the component in angular application. The template is immediately associated with a component defines that component's view. </p>
+        <h2>10.ng add Command</h2>
+        <p> The <b>ng add command</b> is used to add support for an external library to your project.</p>
+        <h2>11.Types of angular commands </h2>
+        <p><ul>
+            <li>ng add Command </li>
+            <li>ng build Command</li>
+            <li>ng config Command</li>
+            <li>ng doc Command
+            </li>
+            <li>ng e2e Command
+            </li>
+            <li>ng generate Command
+            </li></ul> </p>
+        <h2>12.Angular Libraries </h2>
+        <p><b>Angular libraries</b> are built as a solution of general problems such as presenting a unified user interface, presenting data, and allowing data entry. <br>Angular libraries extend Angular's base functionalities. For example, if you want to add reactive forms to an app, add the library package using ng add @angular/forms, then import the ReactiveFormsModule from the @angular/forms library in your application code.
+        </p>
+        <h2>13.Data Binding</h2>
+        <p>Data binding is a core concept in Angular and allows to define communication between a component and the DOM.<br><b>There are two types of data binding:</b>
+        <ul>
+            <li><b>Event Binding:</b> Event binding is used to bind events to your app and respond to user input in the target environment by updating your application data.</li>
+            <li><B>Property Binding:</B> Property binding is used to pass data from component class and facilitates you to interpolate values that are computed from your application data into the HTML. </li>
+        </ul></p>
+        <h2>14.Metadata</h2>
+        <p><b>Metadata</b> is used to decorate a class so that it can configure the expected behavior of the class. The metadata is represented by decorators.
+        </p>
+        <h2>15.Services</h2>
+        <p>In Angular, developers create a <B>service</B> class for data or logic that isn't associated with a specific view, and they want to share across components.
+
+        </p>
+        <h2>16.Dependency Injection</h2>
+        <p><b>Dependency Injection (DI)</b> is used to make your component classes lean and efficient. DI doesn't fetch data from the server, validate user input, or log directly to the console; it simply renders such tasks to services.
+
+        </p>
+        <h2>17.Routing</h2>
+        <p><B>Router</B> is an NgModule which provides a service that facilitates developers to define a navigation path among the different application states and view hierarchies in their app.</p>
+        <h2>18.Angular Pipes</h2>
+        <p>A <b>pipe</b> takes in data as input and transforms it to a desired output.<br>Angular 7 provides some built-in pipes:
+        <ul> 
+            <li>Lowercasepipe</li>
+            <li>Uppercasepipe</li>
+            <li>Datepipe</li>
+            <li>Currencypipe</li>
+            <li>Jsonpipe</li>
+            <li>Percentpipe</li>
+            <li>Decimalpipe</li>
+            <li>Slicepipe</li>
+
+        </ul></p>
+        <h2>19.Angular Forms</h2>
+        <p><b>Angular forms</b> are used to handle user's input. We can use Angular form in our application to enable users to log in, to update profile, to enter information, and to perform many other data-entry tasks.<br>In Angular , there are 2 approaches to handle user's input through forms:
+        <ul><li>Reactive forms
+        </li>
+        <li>Template-driven forms
+        </li>
+        </ul></p>
+        <h2>20.Angular vs React</h2>
+        <p><b>Angular and React</b> both are related to JavaScript but there are a lot of differences between them. Here, we are going to compare both of them </p>
+
+          <div class="container"> 
+                    <div class="row">
+                      <div class="col-sm">
+                        <p><b><u>Angular</u>:</b></p>
+                  <p><ul><li>Angular is a TypeScript based JavaScript framework. It is written in TypeScript. Angular is developed and maintained by Google.</li>
+                    <li>Angular is a full MVC (Model, View, and Controller) framework.</li><br>
+                    <li>Angular uses regular DOM. The regular DOM updates the entire tree structure of HTML tags.</li>
+                    <li>Angular uses enhanced HTML templates.</li>
+                    <li>Angular provides two-way data binding. </li>
+                    <li>Angular is written in TypeScript.</li>
+                    <li>Angular is easy to scale.	</li>
+                    <li>Angular is fast as compared to old technologies.</li>
+                    <li>The size of Angular is large, so it takes longer load time and performance on mobile.	</li>
+                    <li>Company Using:	
+                        Google
+                        Nike
+                        Forbes
+                        Upwork
+                        General Motors
+                        HBO
+                        Sony etc.</li>
+                </ul></p>
+                      </div>
+                      <div class="col-sm">
+                        <p><b><u>React</u>:</b></p>
+                  <p><ul><li>React is not a framework. It is a JavaScript library developed and maintained by Facebook.</li>
+                    <li>React is a simple JavaScript library (just the View) but it gives you much more freedom.</li>
+                    <li>React uses virtual DOM which makes it amazing fast. </li><br>
+                    <li>React uses UI templates.</li>
+                    <li>React provides one-way data binding.</li>
+                    <li>React uses JavaScript.</li>
+                    <li>React is more scalable than Angular.</li>
+                    <li>React is faster than Angular.</li>
+                    <li>The size of React is smaller than Angular, so it is a little bit faster.
+                    </li><br>
+                    <li>Company Using:Facebook
+                        Airbnb
+                        Uber
+                        Netflix
+                        Instagram
+                        WhatsApp
+                        Dropbox etc.
+                        
+                    </li>
+                </ul></p>
+                      </div>
+                      </div>
+                    </div>
+                    <h2>21.Interpolation</h2>
+                    <p><B>Interpolation</B> is a special syntax that Angular converts into property binding. It’s a convenient alternative to property binding. It is represented by double curly braces({{}}). The text between the braces is often the name of a component property. Angular replaces that name with the string value of the corresponding component property.
+
+                    </p>
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
